@@ -1,0 +1,37 @@
+2026-10-18T11:36:53.511680+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-18T11:36:53.621190+00:00 ubuntu groupadd[6307]: group added to /etc/group: name=lab5user, GID=1002
+2026-10-18T11:36:53.624483+00:00 ubuntu groupadd[6307]: group added to /etc/gshadow: name=lab5user
+2026-10-18T11:36:53.627123+00:00 ubuntu groupadd[6307]: new group: name=lab5user, GID=1002
+2026-10-18T11:36:53.658006+00:00 ubuntu useradd[6312]: new user: name=lab5user, UID=1002, GID=1002, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/0
+2026-10-18T11:37:04.404804+00:00 ubuntu passwd[6323]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-18T11:43:46.923875+00:00 ubuntu chfn[6327]: changed user 'lab5user' information
+2026-10-18T11:43:50.935973+00:00 ubuntu gpasswd[6351]: members of group users set by root to areebam,labuser,lab5user
+2026-10-18T12:01:27.516497+00:00 ubuntu unix_chkpwd[6433]: password check failed for user (lab5user)
+2026-10-18T12:01:27.521763+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=areebam uid=1000 euid=0 tty=/dev/tty1 ruser=areebam rhost=  user=lab5user
+2026-10-18T12:01:30.055018+00:00 ubuntu su[6430]: FAILED SU (to lab5user) areebam on tty1
+2026-10-18T12:02:21.142251+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/bin/passwd lab5user
+2026-10-18T12:02:29.231984+00:00 ubuntu passwd[6450]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-18T12:02:52.827358+00:00 ubuntu su[6465]: (to lab5user) areebam on tty1
+2026-10-18T12:02:52.834144+00:00 ubuntu su[6465]: pam_unix(su-l:session): session opened for user lab5user(uid=1002) by areebam(uid=1000)
+2026-10-18T12:04:58.474967+00:00 ubuntu su[6465]: pam_unix(su-l:session): session closed for user lab5user
+2026-10-18T12:05:54.441104+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
+2026-10-18T12:08:09.917492+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
+2026-10-18T12:08:34.032212+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/sbin/deluser --remove-home lab5user
+2026-10-18T12:08:34.266056+00:00 ubuntu userdel[6588]: delete user 'lab5user'
+2026-10-18T12:08:34.267159+00:00 ubuntu userdel[6588]: delete 'lab5user' from group 'users'
+2026-10-18T12:08:34.269958+00:00 ubuntu userdel[6588]: removed group 'lab5user' owned by 'lab5user'
+2026-10-18T12:08:34.270698+00:00 ubuntu userdel[6588]: removed shadow group 'lab5user' owned by 'lab5user'
+2026-10-18T12:08:34.271458+00:00 ubuntu userdel[6588]: delete 'lab5user' from shadow group 'users'
+2026-10-18T12:20:04.601895+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-18T12:20:04.771529+00:00 ubuntu groupadd[6735]: group added to /etc/group: name=lab5user, GID=1002
+2026-10-18T12:20:04.776366+00:00 ubuntu groupadd[6735]: group added to /etc/gshadow: name=lab5user
+2026-10-18T12:20:04.778206+00:00 ubuntu groupadd[6735]: new group: name=lab5user, GID=1002
+2026-10-18T12:20:04.826055+00:00 ubuntu useradd[6740]: new user: name=lab5user, UID=1002, GID=1002, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/0
+2026-10-18T12:20:11.876830+00:00 ubuntu passwd[6751]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-18T12:20:15.434736+00:00 ubuntu chfn[6755]: changed user 'lab5user' information
+2026-10-18T12:20:17.664752+00:00 ubuntu gpasswd[6762]: members of group users set by root to areebam,labuser,lab5user
+2026-10-18T12:22:21.516072+00:00 ubuntu su[6789]: (to lab5user) areebam on tty1
+2026-10-18T12:22:21.523287+00:00 ubuntu su[6789]: pam_unix(su-l:session): session opened for user lab5user(uid=1002) by areebam(uid=1000)
+2026-10-18T12:23:48.463366+00:00 ubuntu su[6789]: pam_unix(su-l:session): session closed for user lab5user
+2026-10-18T12:24:27.148440+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
+2026-10-18T12:26:06.421548+00:00 ubuntu sudo: areebam : TTY=/dev/tty1 ; PWD=/home/areebam/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
